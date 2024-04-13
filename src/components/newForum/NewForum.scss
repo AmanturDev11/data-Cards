@@ -1,0 +1,60 @@
+.NewForum {
+	margin-top: 1rem;
+	.content {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.cards {
+			width: 300px;
+			height: 570px;
+			border: 2px solid black;
+			flex-wrap: wrap;
+			text-decoration: none;
+			font-weight: 600;
+			transition: 0.3s;
+
+			&:hover {
+				box-shadow: 0px 0px 9px black;
+				transform: scale(1.1);
+				text-shadow: 0px 0px 10px #00000096;
+				color: #800080;
+			}
+			.image-photo {
+				width: 296px;
+				height: 300px;
+			}
+			.contentCard {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				gap: 30px;
+				.cardReiting {
+					img {
+						width: 150px;
+					}
+					select {
+						margin-top: 20px;
+						width: 50px;
+						background-color: bisque;
+						color: black;
+					}
+				}
+				.contentButton {
+					display: flex;
+					justify-content: center;
+					button {
+						width: 260px;
+						height: 29px;
+						border-radius: 9px;
+						background-color: yellow;
+						color: black;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	.top {
+		margin-top: 1rem;
+	}
+}
