@@ -12,7 +12,7 @@ import rating9 from "../../assets/images/rating-40.png";
 import rating10 from "../../assets/images/rating-45.png";
 import rating11 from "../../assets/images/rating-50.png";
 const NewForum = () => {
-	const RAITING = (stars) => {
+	const Rating = (stars) => {
 		if (stars <= 0) return rating1;
 		else if (stars <= 0.5) return rating2;
 		else if (stars <= 1) return rating3;
@@ -541,7 +541,7 @@ const NewForum = () => {
 								<p>{item.name}</p>
 								<div className="cardReiting">
 									<img
-										src={RAITING(item.rating.stars)}
+										src={Rating(item.rating.stars)}
 										alt={`Rating: ${item.rating.stars} stars`}
 										className="rating-icon"
 									/>
